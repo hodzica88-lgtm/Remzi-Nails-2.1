@@ -11,7 +11,7 @@
   --radius-lg: 22px;
   --container: 1180px;
   --container-narrow: 860px;
-  --header-height: 108px;
+  --header-height: 110px;
 }
 
 *,
@@ -29,7 +29,7 @@ body {
   font-family: "Inter", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(255, 255, 255, 0.88), transparent 28%),
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.9), transparent 28%),
     linear-gradient(180deg, #fbf3f6 0%, #f8eef2 100%);
   line-height: 1.6;
 }
@@ -67,7 +67,7 @@ textarea {
 }
 
 .soft-section {
-  background: linear-gradient(180deg, rgba(255,255,255,0.30), rgba(244,232,237,0.72));
+  background: linear-gradient(180deg, rgba(255,255,255,0.28), rgba(244,232,237,0.74));
 }
 
 .centered {
@@ -125,7 +125,7 @@ textarea {
 .site-logo {
   height: 92px;
   width: auto;
-  max-width: 520px;
+  max-width: 560px;
   object-fit: contain;
 }
 
@@ -169,10 +169,10 @@ textarea {
   inset: 0;
   z-index: 1;
   background:
-    linear-gradient(90deg, rgba(70, 43, 37, 0.48) 0%, rgba(70, 43, 37, 0.22) 42%, rgba(70, 43, 37, 0.08) 100%);
+    linear-gradient(90deg, rgba(70, 43, 37, 0.48) 0%, rgba(70, 43, 37, 0.20) 42%, rgba(70, 43, 37, 0.08) 100%);
 }
 
-.hero-watermark {
+.hero-logo-bg {
   position: absolute;
   inset: 0;
   z-index: 1;
@@ -182,10 +182,10 @@ textarea {
   pointer-events: none;
 }
 
-.hero-watermark img {
-  width: min(1400px, 96vw);
+.hero-logo-bg img {
+  width: min(1500px, 100vw);
   max-width: none;
-  opacity: 0.10;
+  opacity: 0.12;
   object-fit: contain;
 }
 
@@ -200,15 +200,15 @@ textarea {
 }
 
 .hero-copy {
-  max-width: 860px;
+  max-width: 900px;
 }
 
 .hero-brand-logo {
-  width: min(760px, 92vw);
+  width: min(820px, 96vw);
   max-width: none;
   height: auto;
   object-fit: contain;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   filter: drop-shadow(0 12px 30px rgba(70, 43, 37, 0.16));
 }
 
@@ -226,12 +226,12 @@ textarea {
   gap: 0.9rem;
 }
 
-/* LOGO BACKGROUNDS IN SECTIONS */
+/* BACKGROUND LOGO */
 .logo-section {
   position: relative;
 }
 
-.section-bg-logo {
+.section-logo {
   position: absolute;
   inset: 0;
   z-index: 0;
@@ -241,37 +241,37 @@ textarea {
   justify-content: center;
 }
 
-.section-bg-logo img {
+.section-logo img {
   width: min(860px, 72vw);
   max-width: none;
   opacity: 0.055;
   object-fit: contain;
 }
 
-.section-bg-logo.left {
+.section-logo.left {
   justify-content: flex-start;
 }
 
-.section-bg-logo.left img {
-  transform: translateX(-10%);
+.section-logo.left img {
+  transform: translateX(-8%);
   width: min(760px, 66vw);
 }
 
-.section-bg-logo.right {
+.section-logo.right {
   justify-content: flex-end;
 }
 
-.section-bg-logo.right img {
-  transform: translateX(10%);
+.section-logo.right img {
+  transform: translateX(8%);
   width: min(760px, 66vw);
 }
 
-.section-bg-logo.center {
+.section-logo.center {
   justify-content: center;
 }
 
-.section-bg-logo.large img {
-  width: min(980px, 80vw);
+.section-logo.large img {
+  width: min(980px, 82vw);
 }
 
 .logo-section > .container,
@@ -628,18 +628,18 @@ textarea {
   }
 
   .hero-brand-logo {
-    width: min(620px, 94vw);
+    width: min(650px, 96vw);
   }
 
-  .hero-watermark img {
+  .hero-logo-bg img {
     width: min(1100px, 130vw);
     opacity: 0.08;
   }
 
-  .section-bg-logo img,
-  .section-bg-logo.left img,
-  .section-bg-logo.right img,
-  .section-bg-logo.large img {
+  .section-logo img,
+  .section-logo.left img,
+  .section-logo.right img,
+  .section-logo.large img {
     width: min(620px, 95vw);
     transform: none;
   }
