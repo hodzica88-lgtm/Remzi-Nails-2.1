@@ -1,19 +1,298 @@
-<section class="hero hero-brand">
-  <div class="hero-bg">
-    <img src="images/hero-1.jpg" alt="Elegante Nägel von Remzi Nails" />
-  </div>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Remzi Nails – Elegante Nägel in Stuttgart-Ost</title>
+  <meta
+    name="description"
+    content="Remzi Nails in Stuttgart-Ost – elegante Nägel, stilvolle Ergebnisse, Vorher/Nachher, Preise und Kontakt."
+  />
 
-  <div class="hero-overlay"></div>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
 
-  <div class="container hero-content">
-    <div class="hero-copy hero-copy-brand">
-      <img src="assets/remzi-nails-logo.png" alt="Remzi Nails" class="hero-brand-logo" />
-      <p class="hero-subline">Elegante Nägel in Stuttgart-Ost</p>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
 
-      <div class="hero-actions">
-        <a href="#prices" class="btn btn-primary">Preise</a>
-        <a href="#" class="btn btn-secondary">Instagram</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo-link" aria-label="Remzi Nails Startseite">
+        <img src="assets/remzi-nails-logo.png" alt="Remzi Nails" class="site-logo" />
+      </a>
+
+      <nav class="main-nav" aria-label="Hauptnavigation">
+        <a href="#results">Ergebnisse</a>
+        <a href="#gallery">Galerie</a>
+        <a href="#prices">Preise</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <section class="hero watermark-section hero-watermark">
+      <div class="hero-bg">
+        <img src="images/hero-1.jpg" alt="Elegante Nägel von Remzi Nails" />
+      </div>
+
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <div class="hero-copy hero-copy-brand">
+          <img src="assets/remzi-nails-logo.png" alt="Remzi Nails" class="hero-brand-logo" />
+          <p class="hero-subline">Elegante Nägel in Stuttgart-Ost</p>
+
+          <div class="hero-actions">
+            <a href="#prices" class="btn btn-primary">Preise</a>
+            <a href="#" class="btn btn-secondary">Instagram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="results section watermark-section section-watermark-left" id="results">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="eyebrow">Vorher / Nachher</span>
+          <h2>Ergebnisse, die sofort überzeugen.</h2>
+        </div>
+
+        <div class="before-after-grid">
+          <article class="ba-card">
+            <div class="ba-images">
+              <figure class="ba-image">
+                <img src="images/before-1.jpg" alt="Vorher Nagelbild 1" />
+                <figcaption>Vorher</figcaption>
+              </figure>
+              <figure class="ba-image">
+                <img src="images/after-1.jpg" alt="Nachher Nagelbild 1" />
+                <figcaption>Nachher</figcaption>
+              </figure>
+            </div>
+          </article>
+
+          <article class="ba-card">
+            <div class="ba-images">
+              <figure class="ba-image">
+                <img src="images/before-2.jpg" alt="Vorher Nagelbild 2" />
+                <figcaption>Vorher</figcaption>
+              </figure>
+              <figure class="ba-image">
+                <img src="images/after-2.jpg" alt="Nachher Nagelbild 2" />
+                <figcaption>Nachher</figcaption>
+              </figure>
+            </div>
+          </article>
+
+          <article class="ba-card">
+            <div class="ba-images">
+              <figure class="ba-image">
+                <img src="images/before-3.jpg" alt="Vorher Nagelbild 3" />
+                <figcaption>Vorher</figcaption>
+              </figure>
+              <figure class="ba-image">
+                <img src="images/after-3.jpg" alt="Nachher Nagelbild 3" />
+                <figcaption>Nachher</figcaption>
+              </figure>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery section soft-section watermark-section section-watermark-right" id="gallery">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="eyebrow">Galerie</span>
+          <h2>Mehr Bild. Mehr Wirkung. Mehr Remzi Nails.</h2>
+        </div>
+
+        <div class="gallery-grid">
+          <article class="gallery-card gallery-large">
+            <img src="images/gallery-1.jpg" alt="Nageldesign Remzi Nails 1" />
+          </article>
+
+          <article class="gallery-card">
+            <img src="images/gallery-2.jpg" alt="Nageldesign Remzi Nails 2" />
+          </article>
+
+          <article class="gallery-card">
+            <img src="images/gallery-3.jpg" alt="Nageldesign Remzi Nails 3" />
+          </article>
+
+          <article class="gallery-card">
+            <img src="images/gallery-4.jpg" alt="Nageldesign Remzi Nails 4" />
+          </article>
+
+          <article class="gallery-card">
+            <img src="images/gallery-5.jpg" alt="Nageldesign Remzi Nails 5" />
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="prices section watermark-section section-watermark-center" id="prices">
+      <div class="container narrow">
+        <div class="section-heading centered">
+          <span class="eyebrow">Preisliste</span>
+          <h2>Elegant, klar und in deiner Markenoptik.</h2>
+        </div>
+
+        <div class="price-card">
+          <div class="price-group">
+            <h3>✨ Nägel</h3>
+
+            <div class="price-row">
+              <span>Neumodellage</span>
+              <strong>55 €</strong>
+            </div>
+
+            <div class="price-row">
+              <span>Nachfüllung</span>
+              <strong>35 €</strong>
+            </div>
+
+            <div class="price-row">
+              <span>Shellac</span>
+              <strong>35 €</strong>
+            </div>
+          </div>
+
+          <div class="price-group">
+            <h3>🫧 Pflege</h3>
+
+            <div class="price-row">
+              <span>Paraffinbad</span>
+              <strong>25 €</strong>
+            </div>
+          </div>
+
+          <div class="price-group">
+            <h3>✨ Extras</h3>
+
+            <div class="price-row">
+              <span>Mini-Massage</span>
+              <strong>+5 €</strong>
+            </div>
+
+            <div class="price-row">
+              <span>Design / Muster / Magnet / Extras</span>
+              <strong>ab +5 €</strong>
+            </div>
+          </div>
+
+          <p class="price-note">Preis nach Vereinbarung bei individuellen Wünschen.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="why section soft-section watermark-section section-watermark-left">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="eyebrow">Warum Remzi</span>
+          <h2>Wiedererkennbar. Elegant. Persönlich.</h2>
+        </div>
+
+        <div class="why-grid">
+          <article class="why-card">
+            <h3>Saubere Ergebnisse</h3>
+            <p>Präzise, ordentlich und mit hochwertigem Finish umgesetzt.</p>
+          </article>
+
+          <article class="why-card">
+            <h3>Stilvolle Designs</h3>
+            <p>Feminin, weich und elegant statt laut oder überladen.</p>
+          </article>
+
+          <article class="why-card">
+            <h3>Persönliche Atmosphäre</h3>
+            <p>Ruhig, angenehm und mit Fokus auf ein schönes Gesamterlebnis.</p>
+          </article>
+
+          <article class="why-card">
+            <h3>Markenlook mit Gefühl</h3>
+            <p>High-End, aber trotzdem klar als Remzi Nails wiederzuerkennen.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section watermark-section section-watermark-right" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <span class="eyebrow">Kontakt</span>
+          <h2>Termine aktuell am besten per Instagram-DM.</h2>
+          <p>
+            Für schnelle Anfragen bitte direkt über Instagram schreiben.
+            Das Formular kann zusätzlich zur Vorbereitung genutzt werden.
+          </p>
+
+          <a href="#" class="btn btn-primary">Instagram-DM senden</a>
+        </div>
+
+        <div class="contact-card">
+          <form class="contact-form" action="#" method="post">
+            <input type="hidden" name="source" value="website-remzi-nails" />
+            <input type="hidden" name="form_name" value="kontaktformular" />
+            <input type="hidden" name="studio" value="Remzi Nails" />
+
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Dein Name" />
+            </div>
+
+            <div class="form-row">
+              <label for="email">E-Mail</label>
+              <input type="email" id="email" name="email" placeholder="deine@email.de" />
+            </div>
+
+            <div class="form-row">
+              <label for="phone">Telefon / Instagram</label>
+              <input type="text" id="phone" name="phone" placeholder="@instagramname oder Telefonnummer" />
+            </div>
+
+            <div class="form-row">
+              <label for="service">Wunsch</label>
+              <select id="service" name="service">
+                <option value="">Bitte auswählen</option>
+                <option value="Neumodellage">Neumodellage</option>
+                <option value="Nachfüllung">Nachfüllung</option>
+                <option value="Shellac">Shellac</option>
+                <option value="Pflege">Pflege</option>
+                <option value="Extras">Extras</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="message">Nachricht</label>
+              <textarea id="message" name="message" rows="5" placeholder="Beschreibe kurz deinen Wunsch."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">Anfrage senden</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© Remzi Nails · Stuttgart-Ost</p>
+      <div class="footer-links">
+        <a href="#">Instagram</a>
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
       </div>
     </div>
-  </div>
-</section>
+  </footer>
+
+</body>
+</html>
