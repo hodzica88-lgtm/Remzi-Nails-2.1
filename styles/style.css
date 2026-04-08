@@ -169,7 +169,7 @@ textarea {
   inset: 0;
   z-index: 1;
   background:
-    linear-gradient(90deg, rgba(70, 43, 37, 0.48) 0%, rgba(70, 43, 37, 0.20) 42%, rgba(70, 43, 37, 0.08) 100%);
+    linear-gradient(90deg, rgba(70, 43, 37, 0.36) 0%, rgba(70, 43, 37, 0.16) 45%, rgba(70, 43, 37, 0.06) 100%);
 }
 
 .hero-logo-bg {
@@ -185,7 +185,7 @@ textarea {
 .hero-logo-bg img {
   width: min(1500px, 100vw);
   max-width: none;
-  opacity: 0.12;
+  opacity: 0.11;
   object-fit: contain;
 }
 
@@ -199,17 +199,34 @@ textarea {
   padding: 60px 0;
 }
 
+.hero-content-centered {
+  justify-content: center;
+  text-align: center;
+}
+
 .hero-copy {
   max-width: 900px;
 }
 
+.hero-copy-centered {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .hero-brand-logo {
-  width: min(820px, 96vw);
-  max-width: none;
   height: auto;
   object-fit: contain;
-  margin-bottom: 0.75rem;
   filter: drop-shadow(0 12px 30px rgba(70, 43, 37, 0.16));
+}
+
+.hero-brand-logo-wide {
+  width: min(1180px, 96vw);
+  max-width: none;
+  margin: 0 auto 0.85rem;
 }
 
 .hero-subline {
@@ -220,10 +237,18 @@ textarea {
   letter-spacing: 0.02em;
 }
 
+.hero-subline-centered {
+  text-align: center;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.9rem;
+}
+
+.hero-actions-centered {
+  justify-content: center;
 }
 
 /* BACKGROUND LOGO */
@@ -599,6 +624,10 @@ textarea {
   .contact-grid {
     grid-template-columns: 1fr;
   }
+
+  .hero-brand-logo-wide {
+    width: min(980px, 96vw);
+  }
 }
 
 @media (max-width: 760px) {
@@ -627,8 +656,8 @@ textarea {
     gap: 0.9rem;
   }
 
-  .hero-brand-logo {
-    width: min(650px, 96vw);
+  .hero-brand-logo-wide {
+    width: min(760px, 98vw);
   }
 
   .hero-logo-bg img {
